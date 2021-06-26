@@ -12,7 +12,8 @@ const AdminRoute = ({
   <Route
     {...rest}
     component={(props) => (
-      isAuth && role === 'ADMIN' ? (
+     
+      role === 'ADMIN' ? (
         <>
           <AdminNavigation />
           <main className="content-admin">
